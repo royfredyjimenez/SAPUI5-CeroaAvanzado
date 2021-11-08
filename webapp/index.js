@@ -19,7 +19,7 @@ sap.ui.define([
         }).placeAt("content");
         /*
            XMLView.create({
-                viewName: "logaligroupa21.sapui5.view.App"
+                viewName: "logaligroup.sapui5.view.App"
              }).then(function(oView) {
               oView.placeAt("content");
         
