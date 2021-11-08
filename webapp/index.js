@@ -11,7 +11,7 @@ sap.ui.define([
 
     function (ComponentContainer) {
         new ComponentContainer({
-            name: "logaligroupa21.sapui5",
+            name: "logaligroup.sapui5",
             settings: {
                 id: "sapui5"
             },
