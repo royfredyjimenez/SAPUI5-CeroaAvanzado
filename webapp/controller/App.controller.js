@@ -15,7 +15,7 @@ sap.ui.define([
     */
     function (Controller, MessageToast, Models, ResourceModel) {
         "use strict";
-        return Controller.extend("logaligroupa21.sapui5.controller.App", {
+        return Controller.extend("logaligroup.sapui5.controller.App", {
             onInit: function () {
                 //Set data model on the view 
                 /*
