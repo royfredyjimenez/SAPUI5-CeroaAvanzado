@@ -11,7 +11,7 @@ sap.ui.define([
 
     function (ComponentContainer) {
         new ComponentContainer({
-            name: "logaligroup.sapui5",
+            name: "logaligroupa21.sapui5",
             settings: {
                 id: "sapui5"
             },
@@ -19,7 +19,7 @@ sap.ui.define([
         }).placeAt("content");
         /*
            XMLView.create({
-                viewName: "logaligroup.sapui5.view.App"
+                viewName: "logaligroupa21.sapui5.view.App"
              }).then(function(oView) {
               oView.placeAt("content");
         
