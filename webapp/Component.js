@@ -9,7 +9,7 @@ sap.ui.define([
      * @param {typeof sap.ui.model.resource.ResourceModel} ResourceModel
      */
     function (UIComponent, Models, ResourceModel) {
-        return UIComponent.extend("logaligroupa21.sapui5.Component", {
+        return UIComponent.extend("logaligroup.sapui5.Component", {
 
             metadata: {
                 "rootview": {
