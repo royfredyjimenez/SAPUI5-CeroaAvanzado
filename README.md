@@ -19,7 +19,7 @@
 
 ## sapui5
 
-Invoices
+Este demo fue desarrollado en el curso de Cero a Avanzado de Logaligroup
 
 ### Starting the generated app
 
@@ -30,7 +30,7 @@ Invoices
 ```
 
 #### Pre-requisites:
-
+1. Tienen que tener creado una cuenta SAP BAS trial 
 1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
 
 
