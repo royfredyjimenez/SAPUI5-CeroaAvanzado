@@ -2,30 +2,20 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/m/MessageToast",
-    "sap/ui/model/json/JSONModel"
+    "logaligroup/sapui5/model/Models"
 ],
     /**
      *  @param {typeof sap.ui.core.mvc.Controller} Controller
      *  @param {typeof sap.m.MessageToast} MessageToast
-     *  @param {typeof sap.ui.model.json.JSONModel} JSONModel
+     *  
      *  */
     /** */
-    /*
-        // 
-        // @param {typeof sap.ui.model.resource.ResourceModel} ResourceModel
-        // * @param {typeof sap.ui.model.resource.ResourceModel} ResourceModel
-    */
-    function (Controller, MessageToast,JSONModel) {
+    
+    function (Controller, MessageToast,Models) {
         "use strict";
         return Controller.extend("logaligroup.sapui5.controller.App", {
             onInit: function () {
-                var oData = {
-                    recipient: {
-                        name : "World"
-                    }
-                };
-                var oModel = new JSONModel(oData);
-                this.getView().setModel(oModel); //cargando en el modelado el modelo json
+               this.getView().setModel(Models.createRecipient()); //cargando en el modelado el modelo json
 
             },
             onShowHello: function () {

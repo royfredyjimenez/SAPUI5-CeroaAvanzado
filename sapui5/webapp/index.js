@@ -4,7 +4,6 @@ sap.ui.define([
     "sap/ui/core/ComponentContainer",
 
 ],
-
     /**
      * 
      *@param {typeof sap.ui.core.mvc.XMLView} XMLView 
@@ -14,7 +13,5 @@ sap.ui.define([
             viewName: "logaligroup.sapui5.view.App"
         }).then(function (oView) {
             oView.placeAt("content");
-
         })
-
     });

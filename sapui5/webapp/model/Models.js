@@ -10,7 +10,7 @@ sap.ui.define([
         return {
             createRecipient: function () {
                 var oData = {
-                    company: {
+                    recipient: {
                         name: "SALISAP EDUCATION",
                     }
                 }
