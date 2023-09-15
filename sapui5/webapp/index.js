@@ -1,17 +1,18 @@
 // @ts-nocheck
 sap.ui.define([
-    "sap/ui/core/mvc/XMLView",
     "sap/ui/core/ComponentContainer",
-
 ],
     /**
      * 
-     *@param {typeof sap.ui.core.mvc.XMLView} XMLView 
+     *@param {typeof sap.ui.core.mvc.ComponentContainer} ComponentContainer 
     */
-    function (XMLView) {
-        XMLView.create({
-            viewName: "logaligroup.sapui5.view.App"
-        }).then(function (oView) {
-            oView.placeAt("content");
-        })
+
+    function (ComponentContainer) {
+        new ComponentContainer({
+            name: "logaligroup.sapui5", //la ruta para llegar al componente
+            settings: {
+                id: "sapui5"
+            },
+            async: true
+        }).placeAt("content"); //metodo que tenemos del tipo javascript 
     });
