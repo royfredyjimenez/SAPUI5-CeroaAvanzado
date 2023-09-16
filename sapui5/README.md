@@ -16,21 +16,16 @@
 |**Enable Code Assist Libraries**<br>False|
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|
-
 ## sapui5
-
 A Fiori application.
-
 ### Starting the generated app
-
 -   This app has been generated using the SAP Fiori tools - App Generator, as part of the SAP Fiori tools suite.  In order to launch the generated app, simply run the following from the generated app root folder:
-
 ```
-    npm start
+npm start
 ```
-
+### Curso de Cero a Avanzado en SAPUI5
+### Video  7. Interfaz de usuario - Objetos 7.1. Vistas anidadas 
 #### Pre-requisites:
-
 1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
 
 
