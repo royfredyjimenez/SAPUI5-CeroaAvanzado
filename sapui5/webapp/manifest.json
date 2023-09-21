@@ -86,7 +86,7 @@
         }
       ],
       "targets": {
-        "TargetView1": {
+        "TargetApp": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
