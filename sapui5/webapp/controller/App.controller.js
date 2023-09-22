@@ -12,6 +12,9 @@ sap.ui.define([
             onInit: function () {
 
             },
-
+            onOpenDialogHeader:function() {
+             //   this.getOwnerComponent().openHelloDialog
+            }
+            
         });
     });

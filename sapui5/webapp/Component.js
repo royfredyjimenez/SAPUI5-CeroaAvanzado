@@ -1,5 +1,6 @@
 // @ts-nocheck
 sap.ui.define([
+    "sap/ui/core/mvc/Controller",
     "sap/ui/core/UIComponent",
     "logaligroup/sapui5/model/Models",
     "sap/ui/model/resource/ResourceModel",
@@ -11,6 +12,7 @@ sap.ui.define([
      * @param {typeof sap.ui.model.resource.ResourceModel} ResourceModel
      */
     function (UIComponent, Models, ResourceModel, HelloDialog) {
+        "use strict";
         return UIComponent.extend("logaligroup.sapui5.Component", {
             metadata: {
                 manifest: "json",
@@ -38,8 +40,9 @@ sap.ui.define([
                 this._helloDialog.destroy();
                 delete this._helloDialog;
             },
+            //funcion que se encarga de abrir el dialogo 
             openHelloDialog: function () {
-                this._helloDialog.open();
-            }
+               this._helloDialog.open();
+             }
         });
     });

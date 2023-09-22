@@ -1,7 +1,6 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/m/MessageToast",
-
 ],
     /**
      *  @param {typeof sap.ui.core.mvc.Controller} Controller
@@ -24,11 +23,11 @@ sap.ui.define([
                 var sMsg = oBundle.getText("helloMsg", [sRecipient]);//le pasamos la clave y el parametro
                 MessageToast.show(sMsg);
             },
-
+            
             onOpenDialog: function () { //invocamos al componente component.js
-                this.getOwnerComponent().openHelloDialog();
+             //   this.getOwnerComponent().openHelloDialog(); //desde cualquier controlador me devuelve el componente de la aplicaion 
             },
-            onCloseDialog: function () { this.byId("helloDialog").close(); }
+     
 
         });
     });
