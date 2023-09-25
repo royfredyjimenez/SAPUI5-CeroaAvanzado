@@ -1,6 +1,5 @@
 // @ts-nocheck
 sap.ui.define([
-    "sap/ui/core/mvc/Controller",
     "sap/ui/core/UIComponent",
     "logaligroup/sapui5/model/Models",
     "sap/ui/model/resource/ResourceModel",

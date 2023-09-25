@@ -25,7 +25,7 @@ sap.ui.define([
             },
             
             onOpenDialog: function () { //invocamos al componente component.js
-             //   this.getOwnerComponent().openHelloDialog(); //desde cualquier controlador me devuelve el componente de la aplicaion 
+              this.getOwnerComponent().openHelloDialog(); //desde cualquier controlador me devuelve el componente de la aplicaion 
             },
      
 
