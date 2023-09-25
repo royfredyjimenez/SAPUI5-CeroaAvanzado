@@ -11,7 +11,6 @@ sap.ui.define([
         "use strict";
         return Controller.extend("logaligroup.sapui5.controller.HelloPanel", {
             onInit: function () {
-
             },
             onShowHello: function () {
                 // MessageToast.show("Hola abaperos");
@@ -23,11 +22,14 @@ sap.ui.define([
                 var sMsg = oBundle.getText("helloMsg", [sRecipient]);//le pasamos la clave y el parametro
                 MessageToast.show(sMsg);
             },
-            
+
             onOpenDialog: function () { //invocamos al componente component.js
-              this.getOwnerComponent().openHelloDialog(); //desde cualquier controlador me devuelve el componente de la aplicaion 
+                this.getOwnerComponent().openHelloDialog(); //desde cualquier controlador me devuelve el componente de la aplicaion 
             },
-     
+            onCloseDialog: function () {
+               this.getOwnerComponent().onCloseDialog();
+            //    this.byId("helloDialog").open();
+            }
 
         });
     });

@@ -41,7 +41,8 @@ sap.ui.define([
             },
             //funcion que se encarga de abrir el dialogo 
             openHelloDialog: function () {
-               this._helloDialog.open();
-             }
+                this._helloDialog.open();
+            } 
+            
         });
     });

@@ -12,7 +12,7 @@ sap.ui.define([
         //objeto manejado
         return ManagedObject.extend("logaligroup.sapui5.controller.HelloDialog", {
             constructor: function (oView) { //la instancia de la vista el parametro de la vista oView
-                this._oView = oView;
+                this._oView = oView; //instanciamos un objeto de la vista (solo va a existir en un controlador)
             },
             exit: function () {
                 delete this._oView;

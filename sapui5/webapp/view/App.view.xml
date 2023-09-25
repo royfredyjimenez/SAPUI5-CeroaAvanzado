@@ -11,7 +11,7 @@
                       icon="sap-icon://action" 
                       text="{i18n>helloDialogHeader}" 
                       press=".onOpenDialogHeader" 
-                      class="sapUiSmallMarginEnd" ariaHasPopup="Dialog"  />   
+                      class="sapUiSmallMarginEnd" />   
             </headerContent>
             <content>
                 <mvc:XMLView viewName="logaligroup.sapui5.view.HelloPanel"/> 
