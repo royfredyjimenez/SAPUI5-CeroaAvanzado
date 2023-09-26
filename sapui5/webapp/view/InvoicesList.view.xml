@@ -2,11 +2,16 @@
 <mvc:View controllerName="logaligroup.sapui5.controller.InvoicesList" 
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc">
-
-    <List id="invoicesList" headerText="{i18n>invoiceListTitle}"   
+<!---List items= esta es la seccion en la que se muestra los registros , el path es la ruta de los registros 
+sorter es para que la lista este ordenada en este caso se coloco en funcion del ProductName" -->
+    <List id="invoiceList" headerText="{i18n>invoiceListTitle}"   
                             class="sapUiResponsiveMargin" 
                             width="auto" 
-                            items="{invoices>/Invoices}">
+                            items="{ path : 'invoices>/Invoices',
+                                     sorter : { path: 'ShipperName',
+                                     group  : true }
+                            }">     
+
           <headerToolbar>
                 <Toolbar>
                         <Title text="{i18n>invoiceListTitle}"/>

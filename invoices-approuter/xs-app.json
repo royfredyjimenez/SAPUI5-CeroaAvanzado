@@ -1,4 +1,10 @@
 {
   "authenticationMethod": "none",
-  "routes": []
+  "routes": [
+    {
+      "source": "(.*)",
+      "target": "$1",
+      "destination": "Northwind"
+    }
+  ]
 }
