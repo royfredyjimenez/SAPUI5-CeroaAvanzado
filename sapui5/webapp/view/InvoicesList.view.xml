@@ -7,7 +7,7 @@ sorter es para que la lista este ordenada en este caso se coloco en funcion del 
     <List id="invoiceList" headerText="{i18n>invoiceListTitle}"   
                             class="sapUiResponsiveMargin" 
                             width="auto" 
-                            items="{ path : 'invoices>/Invoices',
+                            items="{ path : 'northwind>/Invoice',
                                      sorter : { path: 'ShipperName',
                                      group  : true }
                             }">     
@@ -21,22 +21,16 @@ sorter es para que la lista este ordenada en este caso se coloco en funcion del 
             </headerToolbar>
 
         <items>
-            <ObjectListItem title="{invoices>Quantity} x {invoices>ProductName}"
-             number="{ parts : [ {path: 'invoices>ExtendedPrice'},
+            <ObjectListItem title="{northwind>Quantity} x {northwind>ProductName}"
+             number="{ parts : [ {path: 'northwind>ExtendedPrice'},
                                  {path: 'currency>/usd'}],
                                    type: 'sap.ui.model.type.Currency',
                                    formatOptions: {
                                       showMeasure : false
                                       }}" 
                                      numberUnit="{currency>/usd}" 
-                                     numberState="{= ${invoices>ExtendedPrice} > 50 ? 'Success' : 'Error'}">
-           
-                        <firstStatus>
-                            <ObjectStatus text="{
-                                path:'invoices>Status',
-                                formatter:'.formatter.invoicesStatus'
-                            }"/>
-                        </firstStatus>
+                                     numberState="{= ${northwind>ExtendedPrice} > 50 ? 'Success' : 'Error'}">
+            
              </ObjectListItem>
         </items>
     </List>

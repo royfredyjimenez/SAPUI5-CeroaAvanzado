@@ -15,7 +15,7 @@
       ],
       "args": [
         "--open",
-        "test/flpSandbox.html#logaligroupsapui5-display"
+        "index.html"
       ],
       "console": "internalConsole",
       "internalConsoleOptions": "openOnSessionStart",
@@ -43,7 +43,7 @@
         "--config",
         "./ui5-local.yaml",
         "--open",
-        "test/flpSandbox.html#logaligroupsapui5-display"
+        "index.html"
       ],
       "console": "internalConsole",
       "internalConsoleOptions": "openOnSessionStart",
@@ -97,7 +97,7 @@
         "--config",
         "./ui5-local.yaml",
         "--open",
-        "test/flpSandbox.html#logaligroupsapui5-display"
+        "index.html"
       ],
       "console": "internalConsole",
       "internalConsoleOptions": "openOnSessionStart",
@@ -105,6 +105,7 @@
       "port": 9229,
       "env": {
         "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "FIORI_TOOLS_BACKEND_CONFIG": "[{\"path\":\"/V2\",\"destination\":\"Northwind\"}]",
         "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/Invoices/sapui5\"}"
       }
     }
