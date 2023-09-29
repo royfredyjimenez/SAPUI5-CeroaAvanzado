@@ -7,7 +7,7 @@ sorter es para que la lista este ordenada en este caso se coloco en funcion del 
     <List id="invoiceList" headerText="{i18n>invoiceListTitle}"   
                             class="sapUiResponsiveMargin" 
                             width="auto" 
-                            items="{ path : 'northwind>/Invoice',
+                            items="{ path : 'northwind>/Invoices',
                                      sorter : { path: 'ShipperName',
                                      group  : true }
                             }">     
