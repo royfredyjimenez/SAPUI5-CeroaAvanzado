@@ -1,0 +1,66 @@
+_schema-version: "3.2"
+ID: facturas
+description: Facturas listado
+version: 0.0.1
+modules:
+- name: facturas-router
+  type: approuter.nodejs
+  path: router
+  requires:
+  - name: facturas-html5-repo-runtime
+  - name: facturas-uaa
+  - name: facturas-destination-service
+    group: destinations
+    properties:
+      forwardAuthToken: false
+      name: ui5
+      url: https://ui5.sap.com
+  - name: facturas-connectivity
+  parameters:
+    disk-quota: 256M
+    memory: 256M
+resources:
+- name: facturas-uaa
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      tenant-mode: dedicated
+      xsappname: facturas-${space-guid}
+    service: xsuaa
+    service-plan: application
+- name: facturas-html5-repo-runtime
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-plan: app-runtime
+- name: facturas-destination-service
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      HTML5Runtime_enabled: false
+      init_data:
+        instance:
+          destinations:
+          - Authentication: NoAuthentication
+            Name: ui5
+            ProxyType: Internet
+            Type: HTTP
+            URL: https://ui5.sap.com
+          existing_destinations_policy: update
+      version: 1.0.0
+    service: destination
+    service-name: facturas-destination-service
+    service-plan: lite
+- name: facturas-connectivity
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: connectivity
+    service-plan: lite
+parameters:
+  deploy_mode: html5-repo
+  enable-parallel-deployments: true
+build-parameters:
+  before-all:
+  - builder: custom
+    commands:
+    - npm install
