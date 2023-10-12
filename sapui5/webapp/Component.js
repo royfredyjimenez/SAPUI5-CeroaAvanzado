@@ -34,6 +34,7 @@ sap.ui.define([
                 this.setModel(i18nModel, "i18n"); //cargando en el modelado el modelo json
                 //definimos un nuevo atributo que va a manejar la instancia de la vista 
                 this._helloDialog = new HelloDialog(this.getRootControl());
+                this.getRouter().initialize();
             },
             exit: function () {
                 this._helloDialog.destroy();
@@ -42,7 +43,15 @@ sap.ui.define([
             //funcion que se encarga de abrir el dialogo 
             openHelloDialog: function () {
                 this._helloDialog.open();
-            } 
-            
+            },
+            getContentDensityClass: function () {
+                if (!Device.support.touch) {
+                    this._sContentDensityClass = "sapUiSizeCompact";
+                } else {
+                    this._sContentDensityClass = "sapUiSizeCozy";
+                }
+                return this._sContentDensityClass;
+            }
+
         });
     });
