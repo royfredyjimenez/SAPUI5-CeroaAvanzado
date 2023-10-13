@@ -30,10 +30,11 @@ sap.ui.define([
                 UIComponent.prototype.init.apply(this, arguments);
                 this.setModel(Models.createRecipient()); //cargando en el modelado el modelo json
                 //set i18n model on the view
-                var i18nModel = new ResourceModel({ bundleName: "logaligroup.sapui5.i18n.i18n" });
-                this.setModel(i18nModel, "i18n"); //cargando en el modelado el modelo json
+                //  var i18nModel = new ResourceModel({ bundleName: "logaligroup.sapui5.i18n.i18n" });
+                //this.setModel(i18nModel, "i18n"); //cargando en el modelado el modelo json
                 //definimos un nuevo atributo que va a manejar la instancia de la vista 
                 this._helloDialog = new HelloDialog(this.getRootControl());
+                //create the views based on the url 
                 this.getRouter().initialize();
             },
             exit: function () {
@@ -44,6 +45,7 @@ sap.ui.define([
             openHelloDialog: function () {
                 this._helloDialog.open();
             },
+            /*
             getContentDensityClass: function () {
                 if (!Device.support.touch) {
                     this._sContentDensityClass = "sapUiSizeCompact";
@@ -52,6 +54,6 @@ sap.ui.define([
                 }
                 return this._sContentDensityClass;
             }
-
+*/
         });
     });
