@@ -22,7 +22,6 @@ sap.ui.define([
                     name: "logaligroup.sapui5"
                 }
             });
-
             //Actions
             When.onTheAppPage.iSayHelloDialogButton();
 

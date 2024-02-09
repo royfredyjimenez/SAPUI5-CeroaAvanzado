@@ -40,7 +40,6 @@ sap.ui.define(
         }
 
         let fnIsolatedFormatter = InvoicesFormatter.invoiceStatus.bind(oControllerStub);
-
         //Assert
         assert.strictEqual(fnIsolatedFormatter("A"), "New", "The invoice status for A is correct");
         assert.strictEqual(fnIsolatedFormatter("B"), "In Progress", "The invoice status for B is correct");
