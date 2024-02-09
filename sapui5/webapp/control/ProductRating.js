@@ -111,7 +111,7 @@ sap.ui.define(
           this.setValue(0);
           this.getAggregation("_rating").setEnabled(true);
           this.getAggregation("_label").setText(
-            oResourceBundle.getText("productRatingLabelFinal")
+            oResourceBundle.getText("productRatingLabelInitial")
           );
           this.getAggregation("_label").setDesign("Standard");
           this.getAggregation("_button").setEnabled(true);
