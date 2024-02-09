@@ -27,5 +27,6 @@
                 <ObjectAttribute text="{northwind>CustomerName}" />
             </attributes>
         </ObjectHeader>
+       <logali:ProductRating id="rating" class="sapUiSmallMarginBeginEnd" change=".onRatingChange"/>
     </Page>
 </mvc:View>
