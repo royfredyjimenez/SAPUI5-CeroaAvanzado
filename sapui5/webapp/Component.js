@@ -34,7 +34,7 @@ sap.ui.define([
                 //this.setModel(i18nModel, "i18n"); //cargando en el modelado el modelo json
                 //definimos un nuevo atributo que va a manejar la instancia de la vista 
                 this._helloDialog = new HelloDialog(this.getRootControl());
-                //create the views based on the url 
+                //create the views based on the url acceso a los rutas de la aplicacion 
                 this.getRouter().initialize();
             },
             exit: function () {

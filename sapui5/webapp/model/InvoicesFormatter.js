@@ -2,7 +2,7 @@
 sap.ui.define([], function () {
     let oFormatter = {
 
-        invoicesStatus: function (sStatus) {
+        invoiceStatus: function (sStatus) {
         
             let oResourceBundle = this.getView().getModel("i18n").getResourceBundle();
 

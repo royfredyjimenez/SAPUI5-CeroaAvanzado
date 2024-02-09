@@ -28,8 +28,8 @@ sap.ui.define([
             },
 
             onNavBack: function () {
-                const oHistory = History.getInstance();
-                const sPreviousHash = oHistory.getPreviousHash();
+                const oHistory = History.getInstance();/* nos va a devolver la instancia del historial  */
+                const sPreviousHash = oHistory.getPreviousHash(); // nos devuelve el hash anterior 
 
                 if (sPreviousHash !== undefined) {
                     window.history.go(-1);

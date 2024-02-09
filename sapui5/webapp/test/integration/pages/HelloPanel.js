@@ -14,7 +14,7 @@ sap.ui.define([
                 actions: {
                     iSayHelloDialogButton: function () {
                         return this.waitFor({
-                            id: "helloDialogButton",
+                            id: "HelloDialogButton",
                             viewName: "logaligroup.sapui5.view.HelloPanel",
                             actions: new Press(),
                             errorMessage: "Did not find the 'Say Hello Dialog Button' on the HelloPanel view"

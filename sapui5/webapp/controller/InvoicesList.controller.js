@@ -37,7 +37,7 @@ sap.ui.define([
             },
             navigateToDetails : function(oEvent) {
                 const oItem = oEvent.getSource();
-                const oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+                const oRouter = sap.ui.core.UIComponent.getRouterFor(this); //objeto de las rutas 
                 oRouter.navTo("Details", {
                     invoicePath: window.encodeURIComponent(oItem.getBindingContext("northwind").getPath().substr(1))
                 });
