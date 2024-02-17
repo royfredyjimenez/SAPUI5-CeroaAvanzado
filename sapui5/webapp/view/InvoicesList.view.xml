@@ -9,15 +9,15 @@
                 sorter: [{path: 'ShipperName', group: true},
                          {path: 'ProductName'}]
                 }">
-        <headerToolbar>
-            <Toolbar >
-                <Title text="{i18n>invoiceListTitle}"/>
-                <ToolbarSpacer/>
-                <SearchField width="50%"
-                             search=".onFilterInvoices">
-                </SearchField>
-            </Toolbar>
-        </headerToolbar>
+            <headerToolbar>
+                <Toolbar >
+                    <Title text="{i18n>invoiceListTitle}"/>
+                    <ToolbarSpacer/>
+                    <SearchField width="50%"
+                                search=".onFilterInvoices">
+                    </SearchField>
+                </Toolbar>
+            </headerToolbar>
         <items>
             <ObjectListItem title="{northwind>Quantity} x {northwind>ProductName}"
                             number="{ parts: [{path: 'northwind>ExtendedPrice'},
@@ -34,7 +34,7 @@
         </items>
     </List>
 </mvc:View>
-
+ 
 <!--
     type: 'sap.ui.model.type.Currency' redondea el precio
     showMeasure: false hace que no me muestre el tipo de moneda. Con numberUnit hacemos que se vea el tipo de moneda de una forma mas "linda"
