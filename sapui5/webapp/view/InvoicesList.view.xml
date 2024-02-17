@@ -6,7 +6,7 @@
             class="sapUiResposiveMargin" 
             width="auto" 
             items="{ path : 'northwind>/Invoices',
-                        sorter : { path : 'ShipperName',
+                     sorter : { path : 'ShipperName',  
                                 group : true }
                     }">
             <columns>
@@ -43,8 +43,8 @@
                                                 formatOptions: {
                                                     showMeasure : false
                                                 }}"
-                                    unit="{currency>/usd}"
-                                    state="{= ${northwind>ExtendedPrice} > 50 ? 'Success' : 'Error'}"/>
+                                      unit="{currency>/usd}"
+                                      state="{= ${northwind>ExtendedPrice} > 50 ? 'Success' : 'Error'}"/>
                     </cells>
                 </ColumnListItem>
             </items>
