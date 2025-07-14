@@ -4,7 +4,11 @@
     xmlns:l="sap.ui.layout"
     xmlns:core="sap.ui.core"
      displayBlock="true" > 
-    <Panel headerText="{i18n>helloPanel}" class="sapUiResponsiveMargin" width="auto"> 
+    <Panel headerText="{i18n>helloPanel}" 
+           class="sapUiResponsiveMargin" 
+           width="auto"
+           expandable="{device>/system/phone}"
+           expanded="{= !${device>/system/phone} }">
        <content> 
              <Button id="HelloDialogButton" icon="sap-icon://action" text="{i18n>HelloDialogButton}" press=".onOpenDialog" class="sapUiSmallMarginEnd"  />   
              <Button text="{i18n>showHelloButtonText}" press=".onShowHello" class="sapUiSmallMarginEnd"/>                   
