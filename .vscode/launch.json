@@ -12,9 +12,7 @@
       "request": "launch",
       "runtimeExecutable": "npx",
       "cwd": "${workspaceFolder}/sapui5",
-      "windows": {
-        "runtimeExecutable": "npx.cmd"
-      },
+  
       "runtimeArgs": [
         "fiori",
         "run"
@@ -39,9 +37,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}/sapui5",
       "runtimeExecutable": "npx",
-      "windows": {
-        "runtimeExecutable": "npx.cmd"
-      },
+  
       "runtimeArgs": [
         "fiori",
         "run"
@@ -67,9 +63,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}/sapui5",
       "runtimeExecutable": "npx",
-      "windows": {
-        "runtimeExecutable": "npx.cmd"
-      },
+     
       "runtimeArgs": [
         "fiori",
         "run"
