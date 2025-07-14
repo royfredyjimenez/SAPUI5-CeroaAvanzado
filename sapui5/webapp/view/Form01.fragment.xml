@@ -2,7 +2,7 @@
     <Panel id = "panelFragTitle" headerText="{i18n>panelFragTitle}" class="sapUiResponsiveMargin" width="50%">
         <f:SimpleForm id="form" editable="true">
             <f:content>
-                <Label id="{i18n>labelPerson}" text="{i18n>labelPerson}" labelFor="personName"/>
+                <Label id="name" text="{i18n>labelPerson}" labelFor="personName"/>
                 <Input id="personName" width="40%"/>
             </f:content>
         </f:SimpleForm>
